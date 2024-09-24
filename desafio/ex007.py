@@ -1,0 +1,5 @@
+b1 = float(input('Entre com a nota do primeiro bimestre: '))
+b2 = float(input('Entre com a nota do segundo bimestre: '))
+print('A nota do primeiro bimestre foi ', b1)
+print('A nota do segundo bimestre foi ', b2)
+print('A sua média anual foi de: {:.1f}'.format((b1+b2)/2))
