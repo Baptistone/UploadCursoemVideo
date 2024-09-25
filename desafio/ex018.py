@@ -1,5 +1,8 @@
 import math
 ang = int(input('Entre com valor do angulo: '))
-print('O valor do SENO é: {}'.format(math.sin(ang)))
-print('O Valor da CONSENO é: {}'.format(math.cos(ang)))
-print('O valor da TANGENTE é: {}'.format(math.tan(ang)))
+sen = math.sin(math.radians(ang))
+con = math.cos(math.radians(ang))
+tan = math.tan(math.radians(ang))
+print('O valor do SENO é: {:.2f}'.format(sen))
+print('O Valor da CONSENO é: {:.2f}'.format(con))
+print('O valor da TANGENTE é: {:.2f}'.format(tan))
