@@ -1,3 +1,3 @@
 import math
 num = float(input('Entre com um valor real: '))
-print('O numero inteiro de {} é {}'.format(num, math.ceil(num)))
+print('O numero inteiro de {} é {}'.format(num, math.trunc(num)))
