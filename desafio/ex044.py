@@ -4,7 +4,7 @@ print('''FORMAS DE PAGAMENTO
       [2] à vista no cartao
       [3] 2 x no cartao
       [4] 3 x ou mais no cartão''')
-pagamento = int(input('Qual é a opcao?'))
+pagamento = int(input('Qual é a opcao? '))
 if pagamento == 1:
     total = compra - (compra*10/100)
     print('Sua compra de R${:.2f} vai custar R${:.2f}.'.format(compra, total))
@@ -13,8 +13,12 @@ elif pagamento == 2:
     print('Sua compra de R${:.2f} vai custar R${:.2f}.'.format(compra, total))
 elif pagamento == 3:
     total = compra
+    print('Sua compra será parcelada em 2x de {:.2f}'.format(compra/2))
     print('Sua compra de R${:.2f} vai custar R${:.2f}.'.format(compra, total))
 elif pagamento == 4:
+    vezes = int(input('Quantas parcelas deseja fazer: '))
+    print('Sua compra será parcelada em {}x de R${:.2f}'.format(
+        vezes, (compra/vezes)))
     total = compra + (compra*20/100)
     print('Sua compra de R${:.2f} vai custar R${:.2f}.'.format(compra, total))
 else:
