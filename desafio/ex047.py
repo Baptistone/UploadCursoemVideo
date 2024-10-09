@@ -1,4 +1,3 @@
-from time import sleep
-for c in range(0, 50, 2):
-    sleep(1)
-    print(c)
+for c in range(2, 51):
+    if c % 2 == 0:
+        print(c, end=' ')
